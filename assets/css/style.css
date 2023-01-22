@@ -36,6 +36,10 @@ img {
     width: 100%;
 }
 
+.bg-base {
+    background-color: var(--color-base);
+}
+
 .text-brand-1 {
     color: var(--color-brand)
 }
@@ -71,7 +75,15 @@ img {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgb(218, 245, 109, 0.5);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
 /* NAVBAR */
@@ -83,33 +95,33 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    position: relative;
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand2);
 }
 
 .navbar .nav-link:hover{
-    color: var(--color-brand);
+    color: var(--color-brand2);
 }
 
-.navbar .nav-link::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: var(--color-brand);
-    position: absolute;
-    left: 0;
-    top: 80%;
-    transition: all 0.4s;
+#nav_drop:hover>.dropdown-menu {
+    display: contents;
 }
 
-.navbar .nav-link:hover::after {
-    color: var(--color-brand);
-    width: 100%;
+.dropdown-item:hover {
+    background-color: transparent;
+}
+  
+#nav_drop>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
 
 @media (min-width: 990px) {
     body {
         background: linear-gradient(rgb(2, 42, 48, 0.8), rgb(2, 42, 48, 0.8)), url(../images/body_image.jpg);
-        background-size: cover;
+        background-size: auto;
         background-position: center;
     }
     .navbar {
@@ -147,4 +159,38 @@ img {
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
 }

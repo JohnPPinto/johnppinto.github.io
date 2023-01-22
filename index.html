@@ -12,26 +12,31 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">John Pinto</span>
                 <img src="./assets/images/john_photo.jpg" class="d-none d-lg-block rounded-circle" alt="My Photo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">My Projects</a>
+                    <li id="nav_drop" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#projects" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">My Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="nav-link dropdown-item" href="#ml">Machine Learning</a>
+                            <a class="nav-link dropdown-item" href="#data_analysis">Data Analysis</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -50,23 +55,121 @@
 
     <!-- CONTENT-WRAPPER -->
     <div id="content-wrapper">
+
         <!-- HOME -->
         <section id="home" class="full-height px-lg-5">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold">I'M <span class="text-brand-1">JOHN PINTO</span></h1>
-                        <h1 class="display-4 fw-bold">A <span class="text-brand-2"></span></h1>
-                        <p class="lead mt-4 mb-4">A Data Science Enthusiast. Who Has A Passion For Data Analysing And Storytelling, And 
-                            Creating Stuff Using Artificial Intelligence.</p>
-                        <a href="#projects" class="btn btn-brand"> Explore My Projects</a>
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I AM <span class="text-brand-1">JOHN</span>
+                        </h1>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">A <span class="text-brand-2"></span></h1>
+                        <p class="lead mt-4 mb-4" data-aos="fade-up" data-aos-delay="300">A Data Science Enthusiast.
+                            Who Has A Passion For Data Analysing And Storytelling,
+                            And Creating Stuff Using Artificial Intelligence.</p>
+                        <a href="#projects" class="btn btn-brand" data-aos="fade-up" data-aos-delay="600">
+                            Explore My Projects
+                        </a>
                     </div>
                 </div>
             </div>
 
         </section>
         <!-- //HOME -->
+
+        <!-- PROJECTS(Note: use image ratio of 1.7777, i.e height=width/ratio) -->
+        <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h2 class="text-brand-1">MY PROJECTS</h2>
+                        <h5>My Recent Projects</h5>
+                    </div>
+                </div>
+
+                <!-- DATA ANALYSIS PROJECTS -->
+                <div id="data_analysis" class="row gy-4">
+                    <h4 class="text-brand-1" data-aos="fade-up">Data Analysis</h4>
+
+                    <!-- MAVEN PROJECT-->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/projects/maven_telcom.jpg"
+                                    alt="Maven Telcom Project">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Maven Communications Analysis</h4>
+                                <p>This project uses Python, to measure, analyze and improve marketing strategy for a
+                                    telecom company. The major focus is to understand the customers behavior and improve
+                                    customer retention.</p>
+                                <a href="" class="link-custom" target="_blank">Notebook Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //MAVEN PROJECT -->
+
+                    <!-- PPP PROJECT-->
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/projects/ppp_image.jpg" alt="PPP Project">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Paycheck Protection Program (PPP) Analysis</h4>
+                                <p>This project uses Python, to understand the business loan initiative taken by the US
+                                    Federal Government during the Covid 19 Pandemic. Analyzing and looking for patterns
+                                    for different organizations that received support during the crisis.</p>
+                                <a href="" class="link-custom" target="_blank">Notebook Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //PPP PROJECT -->
+
+                    <!-- BELLABEAT PROJECT-->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/projects/bellabeat_image.jpg"
+                                    alt="Bellabeat Project">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Bellabeat Smart Devices Analysis</h4>
+                                <p>This project uses R, to understand the customers experience and usage of different
+                                    health-focused smart devices, discovering different trends in the health tech to
+                                    improvise products and strategy.</p>
+                                <a href="" class="link-custom" target="_blank">Notebook Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //BELLABEAT PROJECT -->
+
+                    <!-- CYCLISTIC PROJECT-->
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/projects/cyclistic_image.jpg"
+                                    alt="Bellabeat Project">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Cyclistic Bike - Share Analysis</h4>
+                                <p>This project uses R, to solve key business questions which can help the marketing
+                                    team of a bike - share company to understand customer and product segmentation and
+                                    relationship.</p>
+                                <a href="" class="link-custom" target="_blank">Notebook Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //CYCLISTIC PROJECT -->
+
+                </div>
+                <!-- //DATA ANALYSIS PROJECTS -->
+
+            </div>
+        </section>
+        <!-- //PROJECTS -->
+
     </div>
     <!-- //CONTENT-WRAPPER -->
 
