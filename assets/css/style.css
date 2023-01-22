@@ -95,6 +95,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    transition: 0.5s all ease 0s;
 }
 
 .navbar .nav-link.active {
@@ -103,6 +104,8 @@ img {
 
 .navbar .nav-link:hover{
     color: var(--color-brand2);
+    font-size: 25px;
+    transition: 0.5s all ease 0s;
 }
 
 #nav_drop:hover>.dropdown-menu {
