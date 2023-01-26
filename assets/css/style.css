@@ -121,7 +121,7 @@ img {
     pointer-events: none;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
     body {
         background: linear-gradient(rgb(2, 42, 48, 0.8), rgb(2, 42, 48, 0.8)), url(../images/body_image.jpg);
         background-size: auto;
@@ -160,12 +160,14 @@ img {
 
 .btn-brand:hover, .btn-brand:focus{
     background-color: var(--color-brand2);
-    color: var(--color-base);
+    color: #0557fa;
     border-color: var(--color-brand2);
 }
 
+/* LINK-CUSTOM */
 .link-custom {
     font-weight: 700;
+    color: #0557fa;
     position: relative;
     font-size: larger;
 }
