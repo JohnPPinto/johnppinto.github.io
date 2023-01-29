@@ -160,14 +160,14 @@ img {
 
 .btn-brand:hover, .btn-brand:focus{
     background-color: var(--color-brand2);
-    color: #0557fa;
+    color: #0894ff;
     border-color: var(--color-brand2);
 }
 
 /* LINK-CUSTOM */
 .link-custom {
     font-weight: 700;
-    color: #0557fa;
+    color: #0894ff;
     position: relative;
     font-size: larger;
 }
