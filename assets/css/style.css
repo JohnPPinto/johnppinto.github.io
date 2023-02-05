@@ -121,16 +121,16 @@ img {
     pointer-events: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
     body {
-        background: linear-gradient(rgb(2, 42, 48, 0.8), rgb(2, 42, 48, 0.8)), url(../images/body_image.jpg);
+        background: linear-gradient(rgba(0, 0, 255, 0.65), rgba(0, 0, 255, 0.65)), url(../images/body_image.jpg);
         background-size: auto;
         background-position: center;
     }
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 63, 71, 0.8)), url(../images/sidebar_image.jpg);
+        background: linear-gradient(rgba(16, 36, 220, 0.7), rgba(16, 36, 220, 0.7)), url(../images/sidebar_image.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -167,7 +167,7 @@ img {
 /* LINK-CUSTOM */
 .link-custom {
     font-weight: 700;
-    color: #0894ff;
+    color: #08efff;
     position: relative;
     font-size: larger;
 }
