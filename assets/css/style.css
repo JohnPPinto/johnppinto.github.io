@@ -5,8 +5,8 @@
     --color-heading: #eef3db;
     --color-base: #033f47;
     --color-base2: #022a30;
-    --color-brand: #daf56d;
-    --color-brand2: #d3f840;
+    --color-brand: #b80404;
+    --color-brand2: #FD2D00;
     --sidbar-width: 260px;
     --font-base: "Roboto Slab";
 }
@@ -67,6 +67,14 @@ img {
     }
 }
 
+.hd-title{
+    font-size: 82px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(120, 3, 198) 0%, rgba(253,29,29,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .full-height {
     min-height: 100vh;
     height: 100%;
@@ -75,7 +83,7 @@ img {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgb(218, 245, 109, 0.5);
+    border-bottom: 2px solid rgba(255, 1, 1, 0.5);
 }
 
 .shadow-effect {
@@ -123,15 +131,16 @@ img {
 
 @media (min-width: 990px) {
     body {
-        background: linear-gradient(rgba(0, 0, 255, 0.65), rgba(0, 0, 255, 0.65)), url(../images/body_image.jpg);
+        background-color: rgba(0, 218, 222, 0.7);
+        background: linear-gradient(135deg, rgba(0, 218, 222, 0.7) 0%, rgba(251, 0, 255, 0.7) 100%), url(../images/body_image.png);
         background-size: auto;
         background-position: center;
     }
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(16, 36, 220, 0.7), rgba(16, 36, 220, 0.7)), url(../images/sidebar_image.jpg);
-        background-size: cover;
+        background: linear-gradient(rgba(58, 75, 224, 0.7), rgba(163, 4, 226, 0.7)), url(../images/sidebar_image.jpg);
+        background-size: auto;
         background-position: center;
     }
 
@@ -148,20 +157,22 @@ img {
 
 /* BTN */
 .btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
     padding: 12px 28px;
     font-weight: 700;
+    background-size: 300%;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 50%, #f6d365 100%);
 }
 
-.btn-brand{
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
+.btn-brand:hover{
+    background-position: 200% 0;
     color: var(--color-base);
-}
-
-.btn-brand:hover, .btn-brand:focus{
-    background-color: var(--color-brand2);
-    color: #0894ff;
-    border-color: var(--color-brand2);
+    transition: 1s;
 }
 
 /* LINK-CUSTOM */
