@@ -16,29 +16,26 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">John Pinto</span>
                 <img src="./assets/images/john_photo.jpg" class="d-none d-lg-block rounded-circle" alt="My Photo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li id="nav_drop" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#projects" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">My Projects</a>
-                        <div class="dropdown-menu text-center justify-content-center aria-labelledby="
-                            dropdownMenuButton">
-                            <a class="nav-link dropdown-item" href="#ml">ML & DL</a>
-                            <a class="nav-link dropdown-item" href="#data_analysis">Data Analysis</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -64,9 +61,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">I AM <span class="text-brand-1 hd-title">JOHN PINTO</span>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I AM <span class="text-brand-1 hd-title">JOHN
+                                PINTO</span>
                         </h1>
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">A <span class="text-brand-2 hd-title"></span></h1>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">A <span class="text-brand-2 hd-title"></span>
+                        </h1>
                         <p class="lead mt-4 mb-4" data-aos="fade-up" data-aos-delay="300">A Data Science Enthusiast.
                             Who Has A Passion For Data Analysing And Storytelling,
                             And Creating Stuff Using Artificial Intelligence.</p>
@@ -80,180 +79,288 @@
         </section>
         <!-- //HOME -->
 
+        <!-- SKILLS -->
+        <section id="skills" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I'm Good At!</h2>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <!-- SKILL1 -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-code"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Python, R, SQL</h4>
+                            <p>I enjoy writing machine learning code using python and I even enjoy using 
+                                R for analysis along with SQL.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL1 -->
+
+                    <!-- SKILL2 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-dice-d20"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">HTML, CSS and JS</h4>
+                            <p>Web Development is been a part of me from my early days of programming and 
+                                even the first languages that I learnt.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL2 -->
+
+                    <!-- SKILL3 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Jupyter and Rmarkdown</h4>
+                            <p>I use programming techniques regulary in my projects and most of ML experiments 
+                                and analysis are done using computational notebooks.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL3 -->
+
+                    <!-- SKILL4 -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-robot"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">ML, DL and Data Analysis</h4>
+                            <p>I'm skilled in the field of Artifical Intelligence and Data analysis having strong 
+                                fundamentals and continuous learning in computer vision.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL4 -->
+
+                    <!-- SKILL5 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-network-wired"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Cloud, Git and DevOps</h4>
+                            <p>I have build up skills that work with machine learning and regulary use Github, and strike to 
+                                improve CI/CD workflows.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL5 -->
+
+                    <!-- SKILL6 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skills p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-users-cog"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Team and Project Management</h4>
+                            <p>Some of the skills that I have developed working in different fields is being a team player and
+                                managing projects efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //SKILL6 -->
+
+                </div>
+            </div>
+        </section>
+        <!-- //SKILLS -->
+
         <!-- PROJECTS (Note: use image ratio of 1.7777, i.e height=width/ratio) -->
         <section id="projects" class="full-height px-lg-5">
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h2 class="text-brand-1">MY PROJECTS</h2>
+                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I've Created!</h2>
                     </div>
                 </div>
-
+                
                 <!-- ML & DL -->
                 <div id="ml" class="row gy-4">
-                    <h4 class="text-brand-1" data-aos="fade-up">Machine Learning and Deep Learning Projects</h4>
-
+                    <h4 class="text-brand-1" data-aos="fade-up">Machine Learning and Deep Learning Projects
+                    </h4>
+                    
                     <!-- ANIMAL VISION PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-4" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/animal_vision.png"
+                                <a href="https://huggingface.co/spaces/JohnPinto/Animal_Vision_Big" target="_blank"><img
+                                    class="rounded-4" src="./assets/images/projects/animal_vision.png"
                                     alt="Animal Vision Project">
+                                </a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Animal Vision Project</h4>
-                                <p>This is an end-to-end project based on the computer vision technique to classify
-                                    images of animals, the project is build using PyTorch library and later deployed on
-                                    HuggingFace using Gradio.</p>
-                                <div class="col-lg-8">
+                                <h5><a href="https://huggingface.co/spaces/JohnPinto/Animal_Vision_Big" target="_blank">
+                                        Animal Vision Project
+                                    </a>
+                                </h5>
+                                <p>This is an end-to-end project based on the computer vision technique to
+                                    classify images of animals, the project is build using PyTorch library and later
+                                    deployed on HuggingFace using Gradio.
+                                </p>
+                                <div class="col-sm-8">
                                     <a href="https://github.com/JohnPPinto/animal_vision_pytorch"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://huggingface.co/JohnPinto" class="link-custom px-2"
-                                        target="_blank">HuggingFace Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //ANIMAL VISION PROJECT -->
-
+                                
                     <!-- CINEFACE 1.0 PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/cineface.gif"
-                                    alt=" CineFace 1.0 PROJECT">
+                                <a href="https://nbviewer.org/github/JohnPPinto/cinema_face_actors_pytorch/blob/main/cineface-1-0-actors-face-dcgan-using-pytorch.ipynb" 
+                                target="_blank"><img class="rounded-4" src="./assets/images/projects/cineface.gif" alt=" CineFace 1.0 PROJECT"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>CineFace 1.0 - Actors Face Project</h4>
-                                <p>This project uses a unique unsupervised technique called Generative Adversarial
-                                    Networks (GANs) to generate new images, in this case study faces are generated using
-                                    actors faces dataset.</p>
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/cinema_face_actors_pytorch/blob/main/cineface-1-0-actors-face-dcgan-using-pytorch.ipynb"
+                                    target="_blank">CineFace 1.0 - Actors Face Project</a>
+                                </h5>
+                                <p>This project uses a unique unsupervised technique called Generative
+                                    Adversarial Networks (GANs) to generate new images, in this case study faces are
+                                    generated using actors faces dataset.
+                                </p>
                                 <div class="col-lg-8">
                                     <a href="https://github.com/JohnPPinto/cinema_face_actors_pytorch"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/cinema_face_actors_pytorch/blob/main/cineface-1-0-actors-face-dcgan-using-pytorch.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //CINEFACE 1.0 PROJECT -->
-
+                            
                     <!-- BREAKHIS PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/breakhis.jpg"
-                                    alt="Breast Cancer Histopathological (BreakHis) Project">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
+                                target="_blank"><img class="rounded-4" src="./assets/images/projects/breakhis.jpg" alt="Breast Cancer Histopathological (BreakHis) Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Breast Cancer Histopathological (BreakHis) Project</h4>
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
+                                    target="_blank">Breast Cancer Histopathological (BreakHis)
+                                    Project</a>
+                                </h5>
                                 <p>This project uses TensorFlow and Keras libraries at it's core to classify
-                                    Histopathological images of breast cancer, it helps in differentiating Benign and
-                                    Malignant cells.</p>
+                                    Histopathological images of breast cancer, it helps in differentiating
+                                    Benign and Malignant cells.
+                                </p>
                                 <div class="col-lg-8">
                                     <a href="https://github.com/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //BREAKHIS PROJECT -->
-
+                            
                     <!-- INTEL SCENE PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-4" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/intel_scene.jpg"
-                                    alt=" Intel Scene PROJECT">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
+                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/intel_scene.jpg" alt=" Intel Scene PROJECT"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Intel Scene Classification Project</h4>
-                                <p>This project works on the basic fundamentals of the image classification technique
-                                    used in computer vision using Tensorflow and Keras libraries, this case study uses
-                                    images around the world, which are then classified using deep neural networks.</p>
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
+                                    target="_blank">Intel Scene Classification Project</a>
+                                </h5>
+                                <p>This project works on the basic fundamentals of the image classification
+                                    technique used in computer vision using Tensorflow and Keras libraries, this case
+                                    study uses images around the world, which are then classified using deep neural
+                                    networks.
+                                </p>
                                 <div class="col-lg-8">
                                     <a href="https://github.com/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                    class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //INTEL SCENE PROJECT -->
-
+                                
                 </div>
                 <!-- //ML & DL -->
-
+                            
                 <!-- DATA ANALYSIS PROJECTS -->
-                <div id="data_analysis" class="row gy-4 p-4">
-                    <h4 class="text-brand-1" data-aos="fade-up">Data Analysis Projects</h4>
-
+                <div id="data_analysis" class="row gy-4">
+                    <h4 class="text-brand-1" data-aos="fade-up"><br>Data Analysis Projects</h4>
+                    
                     <!-- MAVEN PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-3" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/maven_telcom.jpg"
-                                    alt="Maven Telcom Project">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
+                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/maven_telcom.jpg" alt="Maven Telcom Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Maven Communications Analysis</h4>
-                                <p>This project uses Python, to measure, analyze and improve marketing strategy for a
-                                    telecom company. The major focus is to understand the customers behavior and improve
-                                    customer retention.</p>
-                                <div class="col-lg-8">
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
+                                        target="_blank">Maven Communications Analysis</a></h5>
+                                <p>This project uses Python, to measure, analyze and improve marketing
+                                    strategy for a telecom company. The major focus is to understand the customers behavior
+                                    and improve customer retention.</p>
+                                <div class="col-sm-10">
                                     <a href="https://github.com/JohnPPinto/Data-Analysis/blob/main/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //MAVEN PROJECT -->
-
+                                
                     <!-- PPP PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/ppp_image.jpg" alt="PPP Project">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/4.%20Paycheck%20Protection%20Program%20%28PPP%29%20Data%20Analysis.ipynb"
+                                target="_blank"><img class="rounded-4" src="./assets/images/projects/ppp_image.jpg" alt="PPP Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Paycheck Protection Program (PPP) Analysis</h4>
-                                <p>This project uses Python, to understand the business loan initiative taken by the US
-                                    Federal Government during the Covid 19 Pandemic. Analyzing and looking for patterns
-                                    for different organizations that received support during the crisis.</p>
-                                <div class="col-lg-8">
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/4.%20Paycheck%20Protection%20Program%20%28PPP%29%20Data%20Analysis.ipynb"
+                                    target="_blank">Paycheck Protection Program (PPP) Analysis</a></h5>
+                                <p>This project uses Python, to understand the business loan initiative
+                                    taken by the US Federal Government during the Covid 19 Pandemic. Analyzing and looking
+                                    for patterns for different organizations that received support during the crisis.</p>
+                                <div class="col-sm-10">
                                     <a href="https://github.com/JohnPPinto/Data-Analysis/blob/main/4.%20Paycheck%20Protection%20Program%20(PPP)%20Data%20Analysis.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/4.%20Paycheck%20Protection%20Program%20%28PPP%29%20Data%20Analysis.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //PPP PROJECT -->
-
+        
                     <!-- BELLABEAT PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/bellabeat_image.jpg"
-                                    alt="Bellabeat Project">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
+                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/bellabeat_image.jpg" alt="Bellabeat Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Bellabeat Smart Devices Analysis</h4>
-                                <p>This project uses R, to understand the customers experience and usage of different
-                                    health-focused smart devices, discovering different trends in the health tech to
-                                    improvise products and strategy.</p>
-                                <div class="col-lg-8">
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
+                                    target="_blank">Bellabeat Smart Devices Analysis</a></h5>
+                                <p>This project uses R, to understand the customers experience and usage of
+                                    different health-focused smart devices, discovering different trends in the health
+                                    tech to improvise products and strategy.</p>
+                                <div class="col-sm-10">
                                     <a href="https://github.com/JohnPPinto/Data-Analysis/blob/main/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
@@ -261,42 +368,41 @@
                     <!-- //BELLABEAT PROJECT -->
 
                     <!-- CYCLISTIC PROJECT-->
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/projects/cyclistic_image.jpg"
-                                    alt="Cyclistic Project">
+                                <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
+                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/cyclistic_image.jpg" alt="Cyclistic Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Cyclistic Bike - Share Analysis</h4>
-                                <p>This project uses R, to solve key business questions which can help the marketing
-                                    team of a bike - share company to understand customer and product segmentation and
-                                    relationship.</p>
-                                <div class="col-lg-8">
+                                <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
+                                    target="_blank">Cyclistic Bike - Share Analysis</a></h5>
+                                <p>This project uses R, to solve key business questions which can help the
+                                    marketing team of a bike - share company to understand customer and product
+                                    segmentation and relationship.</p>
+                                <div class="col-sm-10">
                                     <a href="https://github.com/JohnPPinto/Data-Analysis/blob/main/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
-                                        class="link-custom px-3" target="_blank">Github Link</a>
-                                    <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
-                                        class="link-custom px-3" target="_blank">NbViewer Link</a>
+                                        class="link-custom px-3" target="_blank">Code Link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //CYCLISTIC PROJECT -->
-
+                        
                 </div>
                 <!-- //DATA ANALYSIS PROJECTS -->
 
             </div>
         </section>
         <!-- //PROJECTS -->
-
+                    
         <!-- Blog -->
         <section id="blog" class="full-height px-lg-5">
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h2 class="text-brand-1">BLOG</h2>
-                        <h5>My Articles</h5>
+                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I've Blogged!</h2>
+                        <h5 class="text-brand-1" data-aos="fade-up">My Articles</h5>
                     </div>
                 </div>
 
@@ -318,34 +424,37 @@
                     </div>
                 </div>
                 <!-- //Tensorflow Modelling -->
-
+            
             </div>
         </section>
         <!-- //Blog -->
-
-        <!-- ABOUT ME -->
+                    
+        <!-- ABOUT ME (Need to update this.) -->
         <section id="about" class="full-height px-lg-5">
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-12">
-                        <h2 class="text-brand-1">ABOUT ME</h2>
-                        <div class="lead mt-5 mb-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="text-brand-1">Some Things About Me!</h2>
+                        <div class="lead mt-5 mb-3 d-flex flex-column" data-aos="fade-up"
+                            data-aos-delay="300">
                             <p>I am a self-motivated, enthusiastic team worker with a keen
-                                interest in Data Analysis and Machine Learning. I enjoy being strategic with data and I
-                                excel at realizing, what needs to be acquired to increase the value of the existing
-                                data. I am passionate about solving problems through data storytelling and
-                                visualization.</p>
+                                interest in Data Analysis and Machine Learning. I enjoy being strategic with
+                                data and I excel at realizing, what needs to be acquired to increase the value of the
+                                existing data. I am passionate about solving problems through data storytelling and
+                                visualization.
+                            </p>
                             <p>My understanding of the importance of data got evolved during my
-                                time in the ecommerce and supply chain industry. I got into Data Analytics and Science
-                                in 2022, using self-paced online resources and by building personal projects, these
-                                projects were built using R and Python programming languages using libraries like
-                                Tidyverse, Lubridate, Dplyr, Ggplot2, Pandas, Matplotlib, Seaborn, Plotly, Hvplot,
-                                Holoviews, Bokeh and Panel.</p>
+                                time in the ecommerce and supply chain industry. I got into Data Analytics
+                                and Science in 2022, using self-paced online resources and by building personal
+                                projects, these projects were built using R and Python programming languages using libraries
+                                like Tidyverse, Lubridate, Dplyr, Ggplot2, Pandas, Matplotlib, Seaborn, Plotly,
+                                Hvplot, Holoviews, Bokeh and Panel.
+                            </p>
                             <p>I am extremely intrested in learning and implementing Data
-                                Analytics, AI, Machine Learning and Deep Learning to approach and solve some of the
-                                difficult problems and uncover patterns in data.</p>
+                                Analytics, AI, Machine Learning and Deep Learning to approach and solve some
+                                of the difficult problems and uncover patterns in data.
+                            </p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -357,36 +466,45 @@
             <div class="container">
                 <div class="row pb-4">
                     <div class="col-lg-12">
-                        <h2 class="text-brand-1" data-aos="fade-up">CONTACT ME</h2>
+                        <h2 class="text-brand-1" data-aos="fade-up">Reach Out To Me!</h2>
                         <div class="lead mt-5" data-aos="fade-up" data-aos-delay="300">
-                            <p>Intrested in learning more about me? I am always eager to connect and work with positive
-                                and hard-working teams! Let's connect</p>
+                            <p>Intrested in learning more about me? I am always eager to connect and work
+                                with positive and hard-working teams! Let's connect
+                            </p>
                             <p>Email - <a class="link-custom" href="mailto:pintojohn47@gmail.com"
-                                    target="_blank">pintojohn47@gmail.com</a></p>
-                            <p>LinkedIn - <a class="link-custom" href="https://www.linkedin.com/in/john-p-pinto/"
-                                    target="_blank" rel="noopener">John Pinto</a> </p>
-                        </div>
+                                target="_blank">pintojohn47@gmail.com</a>
+                            </p>
+                            <p>LinkedIn - <a class="link-custom"
+                                href="https://www.linkedin.com/in/john-p-pinto/" target="_blank"
+                                rel="noopener">John Pinto</a>
+                            </p>
+                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- //CONTACT ME-->
-
+                    
         <!-- FOOTER -->
         <footer class="py-5 px-lg-5">
             <div class="container">
                 <div class="row gy-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0">© 2023 - Designed and Developed by John Pinto - All Rights Reserved.</p>
+                        <p class="mb-0">© 2023 - Designed and Developed by John Pinto - All Rights Reserved.
+                        </p>
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
-                            <a href="https://github.com/JohnPPinto" target="_blank"><i class="lab la-github"></i></a>
-                            <a href="mailto:pintojohn47@gmail.com" target="_blank"><i class="lar la-envelope"></i></a>
+                            <a href="https://github.com/JohnPPinto" target="_blank"><i
+                                class="lab la-github"></i></a>
+                            <a href="mailto:pintojohn47@gmail.com" target="_blank"><i
+                                class="lar la-envelope"></i></a>
                             <a href="https://www.linkedin.com/in/john-p-pinto/" target="_blank"><i
-                                    class="lab la-linkedin"></i></a>
-                            <a href="https://www.kaggle.com/johnp47" target="_blank"><i class="lab la-kaggle"></i></a>
-                            <a href="https://medium.com/@pintojohn47" target="_blank"><i class="lab la-medium"></i></a>
+                                class="lab la-linkedin"></i></a>
+                            <a href="https://www.kaggle.com/johnp47" target="_blank"><i
+                                class="lab la-kaggle"></i></a>
+                            <a href="https://medium.com/@pintojohn47" target="_blank"><i
+                                class="lab la-medium"></i></a>
                         </div>
                     </div>
                 </div>
@@ -396,10 +514,10 @@
 
     </div>
     <!-- //CONTENT-WRAPPER -->
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
+            
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/aos.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
-
 </html>
+<!-- PROJECTS (Note: use image ratio of 1.7777, i.e height=width/ratio) -->

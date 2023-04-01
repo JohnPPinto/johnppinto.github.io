@@ -53,14 +53,11 @@ img {
     0% {
         content: 'DATA ANALYST';
     }
-    30% {
+    35% {
         content: 'AI LEARNER';
     }
-    50% {
+    70% {
         content: 'AI PRACTITIONER';
-    }
-    75% {
-        content: 'AI RESEARCHER';
     }
     100% {
         content: 'AI DEVELOPER';
@@ -86,6 +83,17 @@ img {
     box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+}
+
 /* NAVBAR */
 .navbar {
     background-color: var(--color-base);
@@ -106,19 +114,6 @@ img {
     color: var(--color-brand2);
     font-size: 25px;
     transition: 0.5s all ease 0s;
-}
-
-#nav_drop:hover>.dropdown-menu {
-    display: contents;
-}
-
-.dropdown-item:hover {
-    background-color: transparent;
-}
-  
-#nav_drop>.dropdown-toggle:active {
-/*Without this, clicking will make it sticky*/
-    pointer-events: none;
 }
 
 @media (min-width: 992px) {
