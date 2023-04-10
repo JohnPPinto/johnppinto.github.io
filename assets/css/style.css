@@ -151,23 +151,51 @@ img {
 }
 
 /* BTN */
-.btn {
-    flex: 1 1 auto;
-    margin: 10px;
+.btn-hover {
+    display: block;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    padding: 9px 0;
+    height: 40px;
     text-align: center;
-    text-transform: uppercase;
-    padding: 12px 28px;
-    font-weight: 700;
-    background-size: 300%;
-    box-shadow: 0 0 10px #eee;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #f6d365 0%, #fda085 50%, #f6d365 100%);
+    border: none;
+    background-size: 400% 100%;
+    border-radius: 15px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.btn-brand:hover{
-    background-position: 200% 0;
-    color: var(--color-base);
-    transition: 1s;
+.btn-hover:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color1 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.btn-hover.color2 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover.color3 {
+    background-image: linear-gradient(to right, #25aae1, #1c0380, #04befe, #043277);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 /* LINK-CUSTOM */
