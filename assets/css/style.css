@@ -203,7 +203,7 @@ img {
     font-weight: 700;
     color: #08efff;
     position: relative;
-    font-size: larger;
+    font-size: large;
 }
 
 .link-custom::after {
