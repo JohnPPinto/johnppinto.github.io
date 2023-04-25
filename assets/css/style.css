@@ -41,7 +41,7 @@ img {
 }
 
 .text-brand-1 {
-    color: var(--color-brand)
+    color: var(--color-brand);
 }
 
 /* Second title */
@@ -51,30 +51,32 @@ img {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    color: var(--color-brand);
     animation: typing 1s steps(50, end), blink-caret .75s step-end infinite;
-  }
+}
 
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
 
-  @keyframes blink-caret {
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: red }
-  }
+}
 
 .text-brand-2 span {
+    color: var(--color-brand);
     display: inline-block;
     animation: typing 1s steps(50, end), blink-dash .75s step-end infinite;
     animation-delay: 50ms;
     margin-bottom: -2px;
-  }
+}
   
 @keyframes blink-dash {
     from, to { border-color: transparent }
     50% { border-color: red }
-  }
+}
 /* Second title - end */
 
 .full-height {
