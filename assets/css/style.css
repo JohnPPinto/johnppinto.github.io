@@ -44,25 +44,38 @@ img {
     color: var(--color-brand)
 }
 
-.text-brand-2::before {
-    content: '';
-    color: var(--color-brand);
-    animation: animate 8s linear infinite;
-}
-@keyframes animate {
-    0% {
-        content: 'DATA ANALYST';
-    }
-    35% {
-        content: 'AI LEARNER';
-    }
-    70% {
-        content: 'AI PRACTITIONER';
-    }
-    100% {
-        content: 'AI DEVELOPER';
-    }
-}
+/* Second title */
+.text-brand-2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(50, end), blink-caret .75s step-end infinite;
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: red }
+  }
+
+.text-brand-2 span {
+    display: inline-block;
+    animation: typing 1s steps(50, end), blink-dash .75s step-end infinite;
+    animation-delay: 50ms;
+    margin-bottom: -2px;
+  }
+  
+@keyframes blink-dash {
+    from, to { border-color: transparent }
+    50% { border-color: red }
+  }
+/* Second title - end */
 
 .full-height {
     min-height: 100vh;
@@ -126,7 +139,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(58, 75, 224, 0.7), rgba(163, 4, 226, 0.7)), url(../images/sidebar_image.jpg);
+        background: linear-gradient(rgba(58, 75, 224, 0.7), rgba(42, 163, 5, 0.777)), url(../images/sidebar_image.jpg);
         background-size: auto;
         background-position: center;
     }
@@ -144,7 +157,7 @@ img {
     .hd-title{
         font-size: 82px;
         text-transform: uppercase;
-        background: linear-gradient(90deg, rgb(120, 3, 198) 0%, rgba(253,29,29,1) 100%);
+        background: linear-gradient(90deg, rgb(191, 2, 2) 0%, rgb(120, 3, 198) 80%, rgb(120, 3, 198) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

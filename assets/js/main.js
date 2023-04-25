@@ -13,3 +13,30 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// Code for title - typewriter animation control
+var titles = ["DATA ANALYST", "AI LEARNER", "AI PRACTITIONER", "AI DEVELOPER"];
+var currentIndex = 0;
+var h1 = document.getElementsByClassName("text-brand-2")[0];
+
+function typewriter() {
+  var currentTitle = titles[currentIndex];
+  var currentTitleLength = currentTitle.length;
+  var currentTitleIndex = 0;
+  var interval = setInterval(function() {
+    if (currentTitleIndex <= currentTitleLength) {
+      h1.innerHTML = currentTitle.substring(0, currentTitleIndex);
+      currentTitleIndex++;
+    } else {
+      clearInterval(interval);
+      setTimeout(changeTitle, 1000);
+    }
+  }, 100);
+}
+
+function changeTitle() {
+  currentIndex = (currentIndex + 1) % titles.length;
+  typewriter();
+}
+
+typewriter();
