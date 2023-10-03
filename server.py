@@ -52,7 +52,3 @@ def submit_form():
 #     app.jinja_env.auto_reload = True
 #     app.config['TEMPLATES_AUTO_RELOAD'] = True
 #     app.run(debug=True)
-
-@app.route('/test')
-def test():
-    return 'testing - OK'
