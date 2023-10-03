@@ -1,7 +1,18 @@
 import csv
+import git
 from flask import Flask, render_template, request, Response
 
 app = Flask(import_name=__name__)
+
+@app.route('/update_server', methods=['GET', 'POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('https://github.com/JohnPPinto/johnppinto.github.io.git')
+        origin = repo.remotes.origin
+        origin.pull()
+        return 'Updated Portfolio successfully', 200
+    else:
+        return 'Something went wrong. Try again!', 400
 
 @app.route('/')
 def index_page():
