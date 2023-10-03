@@ -7,7 +7,7 @@ app = Flask(import_name=__name__)
 @app.route('/update_server', methods=['GET', 'POST'])
 def webhook():
     if request.method == 'POST':
-        repo = git.Repo('https://github.com/JohnPPinto/johnppinto.github.io.git')
+        repo = git.Repo('./johnppinto.github.io')
         origin = repo.remotes.origin
         origin.pull()
         return 'Updated Portfolio successfully', 200
