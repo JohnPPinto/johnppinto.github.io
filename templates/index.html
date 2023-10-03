@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Pinto</title>
-    <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/aos.css">
-    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="../static/images/favicon.png">
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/css/aos.css">
+    <link rel="stylesheet" href="../static/assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-01DMTHEWBT"></script>
@@ -45,7 +45,7 @@
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">John Pinto</span>
-                <img src="./assets/images/john_photo.jpg" class="d-none d-lg-block rounded-circle" alt="My Photo">
+                <img src="../static/images/john_photo.jpg" class="d-none d-lg-block rounded-circle" alt="My Photo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,23 +83,23 @@
         <!-- HOME -->
         <section id="home" class="full-height px-lg-5">
 
-            <div class="container">
+            <div class="container home">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">I AM <span class="text-brand-1 hd-title">JOHN
-                                PINTO</span>
+                        <img src="../static/images/john_photo.jpg" class="d-block d-lg-none rounded img" alt="My Photo"></br>
+                        <h1 class="display-2 fw-bold" data-aos="fade-up">I AM <span class="text-brand">JOHN PINTO</span>
                         </h1>
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">A <span class="text-brand-2 hd-title"></span>
+                        <h1 class="display-2 fw-bold" data-aos="fade-up">A <span class="text-brand">AI DEVELOPER</span>
                         </h1>
-                        <p class="lead mt-4 mb-4" data-aos="fade-up" data-aos-delay="300">A Data Science Enthusiast.
-                            Who Has A Passion For Data Analysing And Storytelling,
-                            And Creating Stuff Using Artificial Intelligence.
+                        <p class="lead mt-4 mb-4" data-aos="fade-up" data-aos-delay="300">A Data Science Enthusiast,
+                            with a Passion for Data Analysis And Storytelling,
+                            and Creating Stuff using Artificial Intelligence.
                         </p>
                         <div class="row">
-                            <a href="#projects" class="btn-hover color1" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#projects" class="btn-hover" data-aos="fade-up" data-aos-delay="600">
                                 Explore My Projects
                             </a>
-                            <a href="https://johnppinto.github.io/blog/" target="_blank" class="btn-hover color2" 
+                            <a href="https://johnppinto.github.io/blog/" target="_blank" class="btn-hover" 
                                 data-aos="fade-up" data-aos-delay="800">Explore My Blog
                             </a>
                         </div>
@@ -115,7 +115,7 @@
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I'm Good At!</h2>
+                        <h2 class="text-brand" data-aos="fade-up">Some Things I'm Good At!</h2>
                     </div>
                 </div>
                 <div class="row gy-4">
@@ -124,11 +124,11 @@
                     <div class="col-md-4" data-aos="fade-up">
                         <div class="skills p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
-                                <i class="las la-code"></i>
+                                <i class="las la-dice-d20"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Python, R, SQL</h5>
-                            <p>I enjoy writing machine learning code using python and I even enjoy using 
-                                R for analysis along with SQL.
+                            <h5 class="mt-4 mb-2 text-brand">Python, R and SQL</h5>
+                            <p>I enjoy writing data analysis and machine learning code using python and 
+                                R along with SQL.
                             </p>
                         </div>
                     </div>
@@ -138,9 +138,9 @@
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="skills p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
-                                <i class="las la-dice-d20"></i>
+                                <i class="las la-code"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">HTML, CSS and JS</h5>
+                            <h5 class="mt-4 mb-2 text-brand">HTML and CSS</h5>
                             <p>Web Development is been a part of me from my early days of programming and 
                                 even the first languages that I learnt.
                             </p>
@@ -154,7 +154,7 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-users-cog"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Team and Project Management</h5>
+                            <h5 class="mt-4 mb-2 text-brand">Team and Project Management</h5>
                             <p>Some of the skills that I have developed working in different fields is being a team player and
                                 managing projects efficiently.
                             </p>
@@ -168,8 +168,8 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-laptop-code"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Jupyter and Rmarkdown</h5>
-                            <p>I use programming techniques regulary in my projects and most of ML experiments 
+                            <h5 class="mt-4 mb-2 text-brand">Jupyter and Markdown</h5>
+                            <p>I use programming techniques regularly in my projects and most of ML experiments 
                                 and analysis are done using computational notebooks.
                             </p>
                         </div>
@@ -182,9 +182,9 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-robot"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">ML, DL and Data Analysis</h5>
-                            <p>I'm skilled in the field of Artifical Intelligence and Data analysis having strong 
-                                fundamentals and continuous learning in computer vision.
+                            <h5 class="mt-4 mb-2 text-brand">ML, DL and Data Analysis</h5>
+                            <p>I'm skilled in the field of Artificial Intelligence and Data analysis having strong 
+                                fundamentals and continuous learning in the field of Deep Learning.
                             </p>
                         </div>
                     </div>
@@ -196,8 +196,8 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-network-wired"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Cloud, Git and DevOps</h5>
-                            <p>I have build up skills that work with machine learning and regulary use Github, and strike to 
+                            <h5 class="mt-4 mb-2 text-brand">Cloud, Git and DevOps</h5>
+                            <p>I have build up skills that work with machine learning and regularly use Github, and strike to 
                                 improve CI/CD workflows.
                             </p>
                         </div>
@@ -214,13 +214,13 @@
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I've Created!</h2>
+                        <h2 class="text-brand" data-aos="fade-up">Some Things I've Created!</h2>
                     </div>
                 </div>
                 
                 <!-- ML & DL -->
                 <div id="ml" class="row gy-4">
-                    <h4 class="text-brand-1" data-aos="fade-up">Machine Learning and Deep Learning Projects
+                    <h4 class="text-brand" data-aos="fade-up">Machine Learning and Deep Learning Projects
                     </h4>
 
                     <!-- HAR PROJECT-->
@@ -228,7 +228,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://johnpinto-human-activity-recognition-har-video-classifi-03e5d14.hf.space/" 
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/har.jpeg"
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/har.jpeg"
                                     alt="Human Activity Recognition">
                                 </a>
                             </div>
@@ -260,7 +260,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://johnpinto-animal-vision-big.hf.space" target="_blank"><img
-                                    class="rounded-4" src="./assets/images/projects/animal_vision.png"
+                                    class="rounded-4" src="../static/images/projects/animal_vision.png"
                                     alt="Animal Vision Project">
                                 </a>
                             </div>
@@ -287,7 +287,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/cinema_face_actors_pytorch/blob/main/cineface-1-0-actors-face-dcgan-using-pytorch.ipynb" 
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/cineface.gif" alt=" CineFace 1.0 PROJECT">
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/cineface.gif" alt=" CineFace 1.0 PROJECT">
                                 </a>
                             </div>
                             <div class="card-custom-content p-4">
@@ -313,7 +313,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
-                                target="_blank"><img class="rounded-4" src="./assets/images/projects/breakhis.jpg" alt="Breast Cancer Histopathological (BreakHis) Project"></a>
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/breakhis.jpg" alt="Breast Cancer Histopathological (BreakHis) Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/02_breast_cancer_histopathological_project.ipynb"
@@ -339,7 +339,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/intel_scene.jpg" alt=" Intel Scene PROJECT"></a>
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/intel_scene.jpg" alt=" Intel Scene PROJECT"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Deep-Learning-Projects/blob/main/01_intel_scene_classification_project.ipynb"
@@ -364,14 +364,14 @@
                             
                 <!-- DATA ANALYSIS PROJECTS -->
                 <div id="data_analysis" class="row gy-4">
-                    <h4 class="text-brand-1" data-aos="fade-up"><br>Data Analysis Projects</h4>
+                    <h4 class="text-brand" data-aos="fade-up"><br>Data Analysis Projects</h4>
                     
                     <!-- MAVEN PROJECT-->
                     <div class="col-md-3" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/maven_telcom.jpg" alt="Maven Telcom Project"></a>
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/maven_telcom.jpg" alt="Maven Telcom Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/5.%20Maven%20Communications%20Data%20Analysis.ipynb"
@@ -393,7 +393,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/4.%20Paycheck%20Protection%20Program%20%28PPP%29%20Data%20Analysis.ipynb"
-                                target="_blank"><img class="rounded-4" src="./assets/images/projects/ppp_image.jpg" alt="PPP Project"></a>
+                                target="_blank"><img class="rounded-4" src="../static/images/projects/ppp_image.jpg" alt="PPP Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/4.%20Paycheck%20Protection%20Program%20%28PPP%29%20Data%20Analysis.ipynb"
@@ -415,7 +415,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/bellabeat_image.jpg" alt="Bellabeat Project"></a>
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/bellabeat_image.jpg" alt="Bellabeat Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/2.%20Bellabeat%20Data%20Analysis%20Case%20Study.ipynb"
@@ -437,7 +437,7 @@
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
-                                    target="_blank"><img class="rounded-4" src="./assets/images/projects/cyclistic_image.jpg" alt="Cyclistic Project"></a>
+                                    target="_blank"><img class="rounded-4" src="../static/images/projects/cyclistic_image.jpg" alt="Cyclistic Project"></a>
                             </div>
                             <div class="card-custom-content p-4">
                                 <h5><a href="https://nbviewer.org/github/JohnPPinto/Data-Analysis/blob/bd3c71e12ad47c4d0fde4ae7cb40d33ea2b8a4aa/1.%20Case%20Study%20on%20Cyclistic%20Bike%20-%20Share.ipynb"
@@ -466,21 +466,19 @@
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-8">
-                        <h2 class="text-brand-1" data-aos="fade-up">Some Things I've Blogged!</h2>
+                        <h2 class="text-brand" data-aos="fade-up">Some Things I've Blogged!</h2>
                     </div>
                 </div>
                 <div class="row gy-4">
-                    <h4 class="text-brand-1" data-aos="fade-up">My Articles</h4>
-
                     <!-- PyTorch and Lightning 2.0 -->
                     <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog/pytorch_lightning.png"
+                                <img class="rounded-4" src="../static/images/blog/pytorch_lightning.png"
                                     alt="PyTorch and Lightning">
                             </div>
                             <div class="card-custom-content p-4">
-                                <p class="text-brand-1 mb-2">01 April, 2023</p>
+                                <p class="text-brand mb-2">01 April, 2023</p>
                                 <h5 class="mb-4">Riding the Waves - PyTorch and Lightning 2.0</h5>
                                 <a href="https://johnppinto.github.io/blog/posts/2023-04-01_pytorch_and_lightning_2.0/"
                                     class="link-custom" target="_blank">Read More</a>
@@ -493,11 +491,11 @@
                     <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog/tf_modeling.webp"
+                                <img class="rounded-4" src="../static/images/blog/tf_modeling.webp"
                                     alt="Tensorflow Modelling">
                             </div>
                             <div class="card-custom-content p-4">
-                                <p class="text-brand-1 mb-2">20 Nov, 2022</p>
+                                <p class="text-brand mb-2">20 Nov, 2022</p>
                                 <h5 class="mb-4">TensorFlow Modelling — Sequential Vs Functional</h5>
                                 <a href="https://johnppinto.github.io/blog/posts/2022-11-20_tf_modelling/"
                                     class="link-custom" target="_blank">Read More</a>
@@ -516,7 +514,7 @@
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
                     <div class="col-lg-12">
-                        <h2 class="text-brand-1">Some Things About Me!</h2>
+                        <h2 class="text-brand">Some Things About Me!</h2>
                         <div class="lead mt-5 mb-3 d-flex flex-column" data-aos="fade-up"
                             data-aos-delay="300">
                             <p>I am a self-motivated, enthusiastic team player interested in Data Analysis, 
@@ -532,7 +530,7 @@
                                 projects were built using Python and R programming languages.
                             </p>
                             <p>I am extremely interested in learning and implementing Data Analytics, AI, 
-                                Machine Learning, and Deep Learning to approach and solve some complex problems 
+                                Machine Learning, and Deep Learning to solve real world complex problems 
                                 and uncover patterns in data.
                             </p>
                         </div>
@@ -547,16 +545,42 @@
             <div class="container">
                 <div class="row pb-4">
                     <div class="col-lg-12">
-                        <h2 class="text-brand-1" data-aos="fade-up">Get In Touch</h2>
-                        <div class="lead mt-5" data-aos="fade-up" data-aos-delay="300">
-                            <p class="lead">Interested in learning more about me? My inbox is always open.<br> 
-                                I am always eager to connect and work
-                                with positive and hard-working teams!<br>
-                                Feel free to mail me any relevant job updates. Let's connect.
-                            </p>
-                            <a href="mailto:pintojohn47@gmail.com" target="_blank" class="btn-hover color3" data-aos="fade-up" 
-                                data-aos-delay="600"> Mail Me
-                            </a>
+                        <h2 class="text-brand" data-aos="fade-up">Get In Touch</h2>
+                        <div class="row lead mt-5 align-items-center" data-aos="fade-up" data-aos-delay="300">
+                            <p class="lead mb-4">Interested in learning more about me? My inbox is always open, let's connect.</p>
+                            <div class="col-lg-8 mt-4 form" data-aos="fade-up" data-aos-delay="600">
+                                <form action="submit-form" method="post" class="row g-lg-3 gy-3">
+                                    <div class="form-group col-md-6"> Name:
+                                        <input name="name" type="text" class="form-control" placeholder="Enter your Name">
+                                    </div>
+                                    <div class="form-group col-md-6"> Email:
+                                        <input name="email" type="email" class="form-control" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group col-12"> Message:
+                                        <textarea name="message" rows="8" class="form-control" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <button type="submit" class="btn-hover mx-auto" onclick="submitForm()">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="col-auto mb-3">
+                                    <p>My Email:</p>
+                                    <a class="link-custom" href="mailto:pintojohn47@gmail.com" target="_blank">pintojohn47@gmail.com </a>
+                                </div>
+                                <div class="social-icons col-auto">
+                                    <p>Social:</p>
+                                    <a href="https://github.com/JohnPPinto" target="_blank"><i
+                                        class="lab la-github"></i></a>
+                                    <a href="mailto:pintojohn47@gmail.com" target="_blank"><i
+                                        class="lar la-envelope"></i></a>
+                                    <a href="https://www.linkedin.com/in/johnppinto/" target="_blank"><i
+                                        class="lab la-linkedin"></i></a>
+                                    <a href="https://twitter.com/john77272002" target="_blank"><i
+                                        class="lab la-twitter"></i></a>
+                                </div>
+                            </div>
                          </div>
                     </div>
                 </div>
@@ -571,23 +595,9 @@
                     <div class="col-auto">
                         <a href="https://github.com/JohnPPinto/johnppinto.github.io" target="_blank">
                             <p class="mb-0">John Pinto <i class="lar la-copyright"></i> 2023 made with HTML5 <i class="lab la-html5"></i>
-                                and CSS3 <i class="lab la-css3-alt"></i>.
+                                , CSS3 <i class="lab la-css3-alt"></i> and Python <i class="lab la-python"></i>.
                             </p>
                         </a>
-                    </div>
-                    <div class="col-auto">
-                        <div class="social-icons">
-                            <a href="https://github.com/JohnPPinto" target="_blank"><i
-                                class="lab la-github"></i></a>
-                            <a href="mailto:pintojohn47@gmail.com" target="_blank"><i
-                                class="lar la-envelope"></i></a>
-                            <a href="https://www.linkedin.com/in/john-p-pinto/" target="_blank"><i
-                                class="lab la-linkedin"></i></a>
-                            <a href="https://twitter.com/john77272002" target="_blank"><i
-                                class="lab la-twitter"></i></a>
-                            <a href="https://www.kaggle.com/johnp47" target="_blank"><i
-                                class="lab la-kaggle"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -597,9 +607,9 @@
     </div>
     <!-- //CONTENT-WRAPPER -->
             
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/aos.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="../static/assets/js/bootstrap.bundle.min.js"></script>
+<script src="../static/assets/js/aos.js"></script>
+<script src="../static/assets/js/main.js"></script>
 </body>
 <!-- //Portfolio (Note: use image ratio of 1.7777, i.e height=width/ratio) -->
 

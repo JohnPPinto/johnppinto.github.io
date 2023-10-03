@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-text: #ffffff;
+    --color-base: #3b5493;
+    --color-base2: #243665;
+    --color-brand: #71d5b2;
+    --sidebar-width: 260px;
+    --font-base: "Roboto Slab";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-text);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+.home img {
+    border: 8px solid var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s all ease 0s;
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand);
+    transition: 0.5s all ease 0s;
+}
+
+/* BTN */
+.btn-hover {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+    margin: 20px;
+    padding: 12px 24px;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    background: var(--color-base);
+    line-height: 1.15;
+    -webkit-transition: background-color 2s linear;
+    -moz-transition: background-color 2s linear;
+    -o-transition: background-color 2s linear;
+    transition: background-color 2s linear;
+}
+
+.btn-hover:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: var(--color-brand);
+}
+
+/* LINK-CUSTOM */
+.link-custom {
+    font-weight: 700;
+    color: var(--color-brand);
+    position: relative;
+    font-size: large;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    background: transparent;
+    font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: var(--color-base2);
+        background-size: auto;
+        background-position: center;
+    }
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background-color: var(--color-base);
+        background-size: auto;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+    
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+
+    .btn-hover {
+        display: inline-block;
+        width: 25%;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-text);
+        margin: 20px;
+        padding: 12px 24px;
+        height: 40px;
+        text-align: center;
+        border: 0;
+        border-radius: 3px;
+        background: var(--color-base);
+        line-height: 1.15;
+        -webkit-transition: background-color 2s linear;
+        -moz-transition: background-color 2s linear;
+        -o-transition: background-color 2s linear;
+        transition: background-color 2s linear;
+    }
+    
+    .btn-hover:hover{
+        cursor: pointer;
+        color: #000000;
+        background-color: var(--color-brand);
+    }
+
+    .form{
+        border-right: 1px solid var(--color-brand);
+    }
+}
