@@ -1,10 +1,13 @@
 import csv
 import git
+import datetime
+from zoneinfo import ZoneInfo
 from flask import Flask, render_template, request, Response
 
 app = Flask(import_name=__name__)
 
-@app.route('/update_server', methods=['GET', 'POST'])
+# Github webhook for updating the server when pushed to github
+@app.route('/update_server', methods=['POST'])
 def webhook():
     if request.method == 'POST':
         repo = git.Repo('./johnppinto.github.io')
@@ -26,6 +29,8 @@ def index_page():
 # Adding data to database in CSV file
 def write_to_database(data):
     with open(file='database.csv', mode='a', newline='') as csv_file:
+        date_time = datetime.datetime.now(tz=ZoneInfo('Asia/Kolkata'))
+        date_time = date_time.strftime('%Y-%m-%d %H:%M:%S')
         name = data.get('name')
         email = data.get('email')
         message = data.get('message')
@@ -33,10 +38,10 @@ def write_to_database(data):
                                 delimiter=',', 
                                 quotechar='"', 
                                 quoting=csv.QUOTE_MINIMAL)
-        csv_writer.writerow([name, email, message])
+        csv_writer.writerow([date_time, name, email, message])
 
 # App route for form submission and saving form data to database
-@app.route('/submit-form', methods=['GET', 'POST'])
+@app.route('/submit-form', methods=['POST'])
 def submit_form():
     if request.method == 'POST':
         try:
@@ -46,7 +51,7 @@ def submit_form():
         except Exception as e:
             return f'Something went wrong. Try again! {e}'
     else:
-        return 'Something went wrong. Try again!'
+        return 'Something went wrong. Try again!', 400
 
 # if __name__ == '__main__':
 #     app.jinja_env.auto_reload = True
